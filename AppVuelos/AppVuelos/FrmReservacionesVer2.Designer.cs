@@ -1,6 +1,6 @@
 ﻿namespace AppVuelos
 {
-    partial class FrmReservaciones
+    partial class FrmReservacionesVer2
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReservacionesVer2));
             System.Windows.Forms.Label iD_RESERVACIONLabel;
             System.Windows.Forms.Label iD_CLIENTELabel;
             System.Windows.Forms.Label iD_VUELOLabel;
@@ -36,44 +37,43 @@
             System.Windows.Forms.Label sUBTOTALLabel;
             System.Windows.Forms.Label iVALabel;
             System.Windows.Forms.Label tOTALLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReservaciones));
-            this.tAB_RESERVACIONESBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.tAB_RESERVACIONESBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bddvuelosDataSet = new AppVuelos.bddvuelosDataSet();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.tAB_RESERVACIONESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tAB_RESERVACIONESTableAdapter = new AppVuelos.bddvuelosDataSetTableAdapters.TAB_RESERVACIONESTableAdapter();
+            this.tableAdapterManager = new AppVuelos.bddvuelosDataSetTableAdapters.TableAdapterManager();
+            this.tAB_RESERVACIONESBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.tAB_RESERVACIONESBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.iD_RESERVACIONLabel1 = new System.Windows.Forms.Label();
             this.iD_CLIENTEComboBox = new System.Windows.Forms.ComboBox();
-            this.tAB_CLIENTESBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iD_VUELOComboBox = new System.Windows.Forms.ComboBox();
-            this.tAB_VUELOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fECHADateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.sUBTOTALTextBox = new System.Windows.Forms.TextBox();
             this.iVATextBox = new System.Windows.Forms.TextBox();
             this.tOTALTextBox = new System.Windows.Forms.TextBox();
             this.tAB_PLAZASBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tABTARJETASEMBARQUEBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bddvuelosDataSet1 = new AppVuelos.bddvuelosDataSet1();
-            this.tAB_RESERVACIONESTableAdapter = new AppVuelos.bddvuelosDataSetTableAdapters.TAB_RESERVACIONESTableAdapter();
-            this.tableAdapterManager = new AppVuelos.bddvuelosDataSetTableAdapters.TableAdapterManager();
             this.tAB_PLAZASTableAdapter = new AppVuelos.bddvuelosDataSetTableAdapters.TAB_PLAZASTableAdapter();
-            this.tAB_CLIENTESTableAdapter = new AppVuelos.bddvuelosDataSetTableAdapters.TAB_CLIENTESTableAdapter();
-            this.tAB_VUELOSTableAdapter = new AppVuelos.bddvuelosDataSetTableAdapters.TAB_VUELOSTableAdapter();
-            this.tAB_TARJETAS_EMBARQUETableAdapter = new AppVuelos.bddvuelosDataSet1TableAdapters.TAB_TARJETAS_EMBARQUETableAdapter();
             this.tAB_PLAZASDataGridView = new System.Windows.Forms.DataGridView();
+            this.bddvuelosDataSet2 = new AppVuelos.bddvuelosDataSet2();
+            this.tABTARJETASEMBARQUEBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tAB_TARJETAS_EMBARQUETableAdapter = new AppVuelos.bddvuelosDataSet2TableAdapters.TAB_TARJETAS_EMBARQUETableAdapter();
+            this.tAB_CLIENTESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tAB_CLIENTESTableAdapter = new AppVuelos.bddvuelosDataSetTableAdapters.TAB_CLIENTESTableAdapter();
+            this.tAB_VUELOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tAB_VUELOSTableAdapter = new AppVuelos.bddvuelosDataSetTableAdapters.TAB_VUELOSTableAdapter();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -86,80 +86,46 @@
             sUBTOTALLabel = new System.Windows.Forms.Label();
             iVALabel = new System.Windows.Forms.Label();
             tOTALLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.bddvuelosDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tAB_RESERVACIONESBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tAB_RESERVACIONESBindingNavigator)).BeginInit();
             this.tAB_RESERVACIONESBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tAB_RESERVACIONESBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bddvuelosDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tAB_PLAZASBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tAB_PLAZASDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bddvuelosDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tABTARJETASEMBARQUEBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tAB_CLIENTESBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tAB_VUELOSBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tAB_PLAZASBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tABTARJETASEMBARQUEBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bddvuelosDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tAB_PLAZASDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // iD_RESERVACIONLabel
+            // bddvuelosDataSet
             // 
-            iD_RESERVACIONLabel.AutoSize = true;
-            iD_RESERVACIONLabel.Location = new System.Drawing.Point(97, 36);
-            iD_RESERVACIONLabel.Name = "iD_RESERVACIONLabel";
-            iD_RESERVACIONLabel.Size = new System.Drawing.Size(101, 13);
-            iD_RESERVACIONLabel.TabIndex = 1;
-            iD_RESERVACIONLabel.Text = "ID RESERVACION:";
+            this.bddvuelosDataSet.DataSetName = "bddvuelosDataSet";
+            this.bddvuelosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // iD_CLIENTELabel
+            // tAB_RESERVACIONESBindingSource
             // 
-            iD_CLIENTELabel.AutoSize = true;
-            iD_CLIENTELabel.Location = new System.Drawing.Point(97, 65);
-            iD_CLIENTELabel.Name = "iD_CLIENTELabel";
-            iD_CLIENTELabel.Size = new System.Drawing.Size(69, 13);
-            iD_CLIENTELabel.TabIndex = 3;
-            iD_CLIENTELabel.Text = "ID CLIENTE:";
+            this.tAB_RESERVACIONESBindingSource.DataMember = "TAB_RESERVACIONES";
+            this.tAB_RESERVACIONESBindingSource.DataSource = this.bddvuelosDataSet;
             // 
-            // iD_VUELOLabel
+            // tAB_RESERVACIONESTableAdapter
             // 
-            iD_VUELOLabel.AutoSize = true;
-            iD_VUELOLabel.Location = new System.Drawing.Point(97, 92);
-            iD_VUELOLabel.Name = "iD_VUELOLabel";
-            iD_VUELOLabel.Size = new System.Drawing.Size(60, 13);
-            iD_VUELOLabel.TabIndex = 5;
-            iD_VUELOLabel.Text = "ID VUELO:";
+            this.tAB_RESERVACIONESTableAdapter.ClearBeforeFill = true;
             // 
-            // fECHALabel
+            // tableAdapterManager
             // 
-            fECHALabel.AutoSize = true;
-            fECHALabel.Location = new System.Drawing.Point(97, 120);
-            fECHALabel.Name = "fECHALabel";
-            fECHALabel.Size = new System.Drawing.Size(45, 13);
-            fECHALabel.TabIndex = 7;
-            fECHALabel.Text = "FECHA:";
-            // 
-            // sUBTOTALLabel
-            // 
-            sUBTOTALLabel.AutoSize = true;
-            sUBTOTALLabel.Location = new System.Drawing.Point(373, 402);
-            sUBTOTALLabel.Name = "sUBTOTALLabel";
-            sUBTOTALLabel.Size = new System.Drawing.Size(67, 13);
-            sUBTOTALLabel.TabIndex = 9;
-            sUBTOTALLabel.Text = "SUBTOTAL:";
-            // 
-            // iVALabel
-            // 
-            iVALabel.AutoSize = true;
-            iVALabel.Location = new System.Drawing.Point(373, 428);
-            iVALabel.Name = "iVALabel";
-            iVALabel.Size = new System.Drawing.Size(27, 13);
-            iVALabel.TabIndex = 11;
-            iVALabel.Text = "IVA:";
-            // 
-            // tOTALLabel
-            // 
-            tOTALLabel.AutoSize = true;
-            tOTALLabel.Location = new System.Drawing.Point(373, 454);
-            tOTALLabel.Name = "tOTALLabel";
-            tOTALLabel.Size = new System.Drawing.Size(45, 13);
-            tOTALLabel.TabIndex = 13;
-            tOTALLabel.Text = "TOTAL:";
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.TAB_AEROPUERTOSTableAdapter = null;
+            this.tableAdapterManager.TAB_CIUDADESTableAdapter = null;
+            this.tableAdapterManager.TAB_CLIENTESTableAdapter = this.tAB_CLIENTESTableAdapter;
+            this.tableAdapterManager.TAB_PAISESTableAdapter = null;
+            this.tableAdapterManager.TAB_PLAZASTableAdapter = this.tAB_PLAZASTableAdapter;
+            this.tableAdapterManager.TAB_RESERVACIONESTableAdapter = this.tAB_RESERVACIONESTableAdapter;
+            this.tableAdapterManager.TAB_ROLESTableAdapter = null;
+            this.tableAdapterManager.TAB_TARJETAS_EMBARQUETableAdapter = null;
+            this.tableAdapterManager.TAB_USUARIOSTableAdapter = null;
+            this.tableAdapterManager.TAB_VUELOSTableAdapter = this.tAB_VUELOSTableAdapter;
+            this.tableAdapterManager.UpdateOrder = AppVuelos.bddvuelosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // tAB_RESERVACIONESBindingNavigator
             // 
@@ -187,44 +153,9 @@
             this.tAB_RESERVACIONESBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.tAB_RESERVACIONESBindingNavigator.Name = "tAB_RESERVACIONESBindingNavigator";
             this.tAB_RESERVACIONESBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.tAB_RESERVACIONESBindingNavigator.Size = new System.Drawing.Size(900, 25);
+            this.tAB_RESERVACIONESBindingNavigator.Size = new System.Drawing.Size(742, 25);
             this.tAB_RESERVACIONESBindingNavigator.TabIndex = 0;
             this.tAB_RESERVACIONESBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // tAB_RESERVACIONESBindingSource
-            // 
-            this.tAB_RESERVACIONESBindingSource.DataMember = "TAB_RESERVACIONES";
-            this.tAB_RESERVACIONESBindingSource.DataSource = this.bddvuelosDataSet;
-            // 
-            // bddvuelosDataSet
-            // 
-            this.bddvuelosDataSet.DataSetName = "bddvuelosDataSet";
-            this.bddvuelosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -258,10 +189,17 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 15);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -269,7 +207,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorMoveNextItem.Text = "Mover siguiente";
             // 
             // bindingNavigatorMoveLastItem
@@ -278,49 +216,88 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorMoveLastItem.Text = "Mover último";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // tAB_RESERVACIONESBindingNavigatorSaveItem
             // 
             this.tAB_RESERVACIONESBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tAB_RESERVACIONESBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("tAB_RESERVACIONESBindingNavigatorSaveItem.Image")));
             this.tAB_RESERVACIONESBindingNavigatorSaveItem.Name = "tAB_RESERVACIONESBindingNavigatorSaveItem";
-            this.tAB_RESERVACIONESBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.tAB_RESERVACIONESBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
             this.tAB_RESERVACIONESBindingNavigatorSaveItem.Text = "Guardar datos";
-            this.tAB_RESERVACIONESBindingNavigatorSaveItem.Click += new System.EventHandler(this.tAB_RESERVACIONESBindingNavigatorSaveItem_Click);
+            this.tAB_RESERVACIONESBindingNavigatorSaveItem.Click += new System.EventHandler(this.tAB_RESERVACIONESBindingNavigatorSaveItem_Click_1);
+            // 
+            // iD_RESERVACIONLabel
+            // 
+            iD_RESERVACIONLabel.AutoSize = true;
+            iD_RESERVACIONLabel.Location = new System.Drawing.Point(50, 41);
+            iD_RESERVACIONLabel.Name = "iD_RESERVACIONLabel";
+            iD_RESERVACIONLabel.Size = new System.Drawing.Size(101, 13);
+            iD_RESERVACIONLabel.TabIndex = 1;
+            iD_RESERVACIONLabel.Text = "ID RESERVACION:";
             // 
             // iD_RESERVACIONLabel1
             // 
             this.iD_RESERVACIONLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tAB_RESERVACIONESBindingSource, "ID_RESERVACION", true));
-            this.iD_RESERVACIONLabel1.Location = new System.Drawing.Point(204, 36);
+            this.iD_RESERVACIONLabel1.Location = new System.Drawing.Point(157, 41);
             this.iD_RESERVACIONLabel1.Name = "iD_RESERVACIONLabel1";
             this.iD_RESERVACIONLabel1.Size = new System.Drawing.Size(200, 23);
             this.iD_RESERVACIONLabel1.TabIndex = 2;
             this.iD_RESERVACIONLabel1.Text = "label1";
             // 
+            // iD_CLIENTELabel
+            // 
+            iD_CLIENTELabel.AutoSize = true;
+            iD_CLIENTELabel.Location = new System.Drawing.Point(50, 70);
+            iD_CLIENTELabel.Name = "iD_CLIENTELabel";
+            iD_CLIENTELabel.Size = new System.Drawing.Size(69, 13);
+            iD_CLIENTELabel.TabIndex = 3;
+            iD_CLIENTELabel.Text = "ID CLIENTE:";
+            // 
             // iD_CLIENTEComboBox
             // 
-            this.iD_CLIENTEComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.iD_CLIENTEComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.tAB_RESERVACIONESBindingSource, "ID_CLIENTE", true));
             this.iD_CLIENTEComboBox.DataSource = this.tAB_CLIENTESBindingSource;
             this.iD_CLIENTEComboBox.DisplayMember = "DATOS";
             this.iD_CLIENTEComboBox.FormattingEnabled = true;
-            this.iD_CLIENTEComboBox.Location = new System.Drawing.Point(204, 62);
+            this.iD_CLIENTEComboBox.Location = new System.Drawing.Point(157, 67);
             this.iD_CLIENTEComboBox.Name = "iD_CLIENTEComboBox";
             this.iD_CLIENTEComboBox.Size = new System.Drawing.Size(200, 21);
             this.iD_CLIENTEComboBox.TabIndex = 4;
             this.iD_CLIENTEComboBox.ValueMember = "ID_CLIENTE";
             // 
-            // tAB_CLIENTESBindingSource
+            // iD_VUELOLabel
             // 
-            this.tAB_CLIENTESBindingSource.DataMember = "TAB_CLIENTES";
-            this.tAB_CLIENTESBindingSource.DataSource = this.bddvuelosDataSet;
+            iD_VUELOLabel.AutoSize = true;
+            iD_VUELOLabel.Location = new System.Drawing.Point(50, 97);
+            iD_VUELOLabel.Name = "iD_VUELOLabel";
+            iD_VUELOLabel.Size = new System.Drawing.Size(60, 13);
+            iD_VUELOLabel.TabIndex = 5;
+            iD_VUELOLabel.Text = "ID VUELO:";
             // 
             // iD_VUELOComboBox
             // 
@@ -328,45 +305,76 @@
             this.iD_VUELOComboBox.DataSource = this.tAB_VUELOSBindingSource;
             this.iD_VUELOComboBox.DisplayMember = "CODIGO_VUELO";
             this.iD_VUELOComboBox.FormattingEnabled = true;
-            this.iD_VUELOComboBox.Location = new System.Drawing.Point(204, 89);
+            this.iD_VUELOComboBox.Location = new System.Drawing.Point(157, 94);
             this.iD_VUELOComboBox.Name = "iD_VUELOComboBox";
             this.iD_VUELOComboBox.Size = new System.Drawing.Size(200, 21);
             this.iD_VUELOComboBox.TabIndex = 6;
             this.iD_VUELOComboBox.ValueMember = "ID_VUELO";
             // 
-            // tAB_VUELOSBindingSource
+            // fECHALabel
             // 
-            this.tAB_VUELOSBindingSource.DataMember = "TAB_VUELOS";
-            this.tAB_VUELOSBindingSource.DataSource = this.bddvuelosDataSet;
+            fECHALabel.AutoSize = true;
+            fECHALabel.Location = new System.Drawing.Point(50, 125);
+            fECHALabel.Name = "fECHALabel";
+            fECHALabel.Size = new System.Drawing.Size(45, 13);
+            fECHALabel.TabIndex = 7;
+            fECHALabel.Text = "FECHA:";
             // 
             // fECHADateTimePicker
             // 
             this.fECHADateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.tAB_RESERVACIONESBindingSource, "FECHA", true));
-            this.fECHADateTimePicker.Location = new System.Drawing.Point(204, 116);
+            this.fECHADateTimePicker.Location = new System.Drawing.Point(157, 121);
             this.fECHADateTimePicker.Name = "fECHADateTimePicker";
             this.fECHADateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.fECHADateTimePicker.TabIndex = 8;
             // 
+            // sUBTOTALLabel
+            // 
+            sUBTOTALLabel.AutoSize = true;
+            sUBTOTALLabel.Location = new System.Drawing.Point(415, 369);
+            sUBTOTALLabel.Name = "sUBTOTALLabel";
+            sUBTOTALLabel.Size = new System.Drawing.Size(67, 13);
+            sUBTOTALLabel.TabIndex = 9;
+            sUBTOTALLabel.Text = "SUBTOTAL:";
+            // 
             // sUBTOTALTextBox
             // 
             this.sUBTOTALTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tAB_RESERVACIONESBindingSource, "SUBTOTAL", true));
-            this.sUBTOTALTextBox.Location = new System.Drawing.Point(480, 399);
+            this.sUBTOTALTextBox.Location = new System.Drawing.Point(522, 366);
             this.sUBTOTALTextBox.Name = "sUBTOTALTextBox";
             this.sUBTOTALTextBox.Size = new System.Drawing.Size(200, 20);
             this.sUBTOTALTextBox.TabIndex = 10;
             // 
+            // iVALabel
+            // 
+            iVALabel.AutoSize = true;
+            iVALabel.Location = new System.Drawing.Point(415, 395);
+            iVALabel.Name = "iVALabel";
+            iVALabel.Size = new System.Drawing.Size(27, 13);
+            iVALabel.TabIndex = 11;
+            iVALabel.Text = "IVA:";
+            // 
             // iVATextBox
             // 
             this.iVATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tAB_RESERVACIONESBindingSource, "IVA", true));
-            this.iVATextBox.Location = new System.Drawing.Point(480, 425);
+            this.iVATextBox.Location = new System.Drawing.Point(522, 392);
             this.iVATextBox.Name = "iVATextBox";
             this.iVATextBox.Size = new System.Drawing.Size(200, 20);
             this.iVATextBox.TabIndex = 12;
             // 
+            // tOTALLabel
+            // 
+            tOTALLabel.AutoSize = true;
+            tOTALLabel.Location = new System.Drawing.Point(415, 421);
+            tOTALLabel.Name = "tOTALLabel";
+            tOTALLabel.Size = new System.Drawing.Size(45, 13);
+            tOTALLabel.TabIndex = 13;
+            tOTALLabel.Text = "TOTAL:";
+            // 
             // tOTALTextBox
             // 
             this.tOTALTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tAB_RESERVACIONESBindingSource, "TOTAL", true));
-            this.tOTALTextBox.Location = new System.Drawing.Point(480, 451);
+            this.tOTALTextBox.Location = new System.Drawing.Point(522, 418);
             this.tOTALTextBox.Name = "tOTALTextBox";
             this.tOTALTextBox.Size = new System.Drawing.Size(200, 20);
             this.tOTALTextBox.TabIndex = 14;
@@ -376,50 +384,9 @@
             this.tAB_PLAZASBindingSource.DataMember = "FK_TAB_PLAZ_REFERENCE_TAB_RESE";
             this.tAB_PLAZASBindingSource.DataSource = this.tAB_RESERVACIONESBindingSource;
             // 
-            // tABTARJETASEMBARQUEBindingSource
-            // 
-            this.tABTARJETASEMBARQUEBindingSource.DataMember = "TAB_TARJETAS_EMBARQUE";
-            this.tABTARJETASEMBARQUEBindingSource.DataSource = this.bddvuelosDataSet1;
-            // 
-            // bddvuelosDataSet1
-            // 
-            this.bddvuelosDataSet1.DataSetName = "bddvuelosDataSet1";
-            this.bddvuelosDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tAB_RESERVACIONESTableAdapter
-            // 
-            this.tAB_RESERVACIONESTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.TAB_AEROPUERTOSTableAdapter = null;
-            this.tableAdapterManager.TAB_CIUDADESTableAdapter = null;
-            this.tableAdapterManager.TAB_CLIENTESTableAdapter = null;
-            this.tableAdapterManager.TAB_PAISESTableAdapter = null;
-            this.tableAdapterManager.TAB_PLAZASTableAdapter = null;
-            this.tableAdapterManager.TAB_RESERVACIONESTableAdapter = this.tAB_RESERVACIONESTableAdapter;
-            this.tableAdapterManager.TAB_ROLESTableAdapter = null;
-            this.tableAdapterManager.TAB_TARJETAS_EMBARQUETableAdapter = null;
-            this.tableAdapterManager.TAB_USUARIOSTableAdapter = null;
-            this.tableAdapterManager.TAB_VUELOSTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = AppVuelos.bddvuelosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
             // tAB_PLAZASTableAdapter
             // 
             this.tAB_PLAZASTableAdapter.ClearBeforeFill = true;
-            // 
-            // tAB_CLIENTESTableAdapter
-            // 
-            this.tAB_CLIENTESTableAdapter.ClearBeforeFill = true;
-            // 
-            // tAB_VUELOSTableAdapter
-            // 
-            this.tAB_VUELOSTableAdapter.ClearBeforeFill = true;
-            // 
-            // tAB_TARJETAS_EMBARQUETableAdapter
-            // 
-            this.tAB_TARJETAS_EMBARQUETableAdapter.ClearBeforeFill = true;
             // 
             // tAB_PLAZASDataGridView
             // 
@@ -435,10 +402,42 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.tAB_PLAZASDataGridView.DataSource = this.tAB_PLAZASBindingSource;
-            this.tAB_PLAZASDataGridView.Location = new System.Drawing.Point(12, 155);
+            this.tAB_PLAZASDataGridView.Location = new System.Drawing.Point(0, 162);
             this.tAB_PLAZASDataGridView.Name = "tAB_PLAZASDataGridView";
-            this.tAB_PLAZASDataGridView.Size = new System.Drawing.Size(850, 220);
+            this.tAB_PLAZASDataGridView.Size = new System.Drawing.Size(722, 149);
             this.tAB_PLAZASDataGridView.TabIndex = 15;
+            // 
+            // bddvuelosDataSet2
+            // 
+            this.bddvuelosDataSet2.DataSetName = "bddvuelosDataSet2";
+            this.bddvuelosDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tABTARJETASEMBARQUEBindingSource
+            // 
+            this.tABTARJETASEMBARQUEBindingSource.DataMember = "TAB_TARJETAS_EMBARQUE";
+            this.tABTARJETASEMBARQUEBindingSource.DataSource = this.bddvuelosDataSet2;
+            // 
+            // tAB_TARJETAS_EMBARQUETableAdapter
+            // 
+            this.tAB_TARJETAS_EMBARQUETableAdapter.ClearBeforeFill = true;
+            // 
+            // tAB_CLIENTESBindingSource
+            // 
+            this.tAB_CLIENTESBindingSource.DataMember = "TAB_CLIENTES";
+            this.tAB_CLIENTESBindingSource.DataSource = this.bddvuelosDataSet;
+            // 
+            // tAB_CLIENTESTableAdapter
+            // 
+            this.tAB_CLIENTESTableAdapter.ClearBeforeFill = true;
+            // 
+            // tAB_VUELOSBindingSource
+            // 
+            this.tAB_VUELOSBindingSource.DataMember = "TAB_VUELOS";
+            this.tAB_VUELOSBindingSource.DataSource = this.bddvuelosDataSet;
+            // 
+            // tAB_VUELOSTableAdapter
+            // 
+            this.tAB_VUELOSTableAdapter.ClearBeforeFill = true;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -446,18 +445,25 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "ID_PLAZA";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "ID_RESERVACION";
             this.dataGridViewTextBoxColumn2.HeaderText = "ID_RESERVACION";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Visible = false;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "ID_TARJETA";
+            this.dataGridViewTextBoxColumn3.DataSource = this.tABTARJETASEMBARQUEBindingSource;
+            this.dataGridViewTextBoxColumn3.DisplayMember = "ID_TARJETA_EMBARQUE";
             this.dataGridViewTextBoxColumn3.HeaderText = "ID_TARJETA";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn3.ValueMember = "ID_TARJETA_EMBARQUE";
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -489,11 +495,11 @@
             this.dataGridViewTextBoxColumn8.HeaderText = "PRECIO";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
-            // FrmReservaciones
+            // FrmReservacionesVer2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 491);
+            this.ClientSize = new System.Drawing.Size(742, 482);
             this.Controls.Add(this.tAB_PLAZASDataGridView);
             this.Controls.Add(iD_RESERVACIONLabel);
             this.Controls.Add(this.iD_RESERVACIONLabel1);
@@ -510,20 +516,20 @@
             this.Controls.Add(tOTALLabel);
             this.Controls.Add(this.tOTALTextBox);
             this.Controls.Add(this.tAB_RESERVACIONESBindingNavigator);
-            this.Name = "FrmReservaciones";
-            this.Text = "FrmReservaciones";
-            this.Load += new System.EventHandler(this.FrmReservaciones_Load);
+            this.Name = "FrmReservacionesVer2";
+            this.Text = "FrmReservacionesVer2";
+            this.Load += new System.EventHandler(this.FrmReservacionesVer2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bddvuelosDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tAB_RESERVACIONESBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tAB_RESERVACIONESBindingNavigator)).EndInit();
             this.tAB_RESERVACIONESBindingNavigator.ResumeLayout(false);
             this.tAB_RESERVACIONESBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tAB_RESERVACIONESBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bddvuelosDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tAB_PLAZASBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tAB_PLAZASDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bddvuelosDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tABTARJETASEMBARQUEBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tAB_CLIENTESBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tAB_VUELOSBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tAB_PLAZASBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tABTARJETASEMBARQUEBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bddvuelosDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tAB_PLAZASDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -548,6 +554,7 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton tAB_RESERVACIONESBindingNavigatorSaveItem;
+        private bddvuelosDataSetTableAdapters.TAB_PLAZASTableAdapter tAB_PLAZASTableAdapter;
         private System.Windows.Forms.Label iD_RESERVACIONLabel1;
         private System.Windows.Forms.ComboBox iD_CLIENTEComboBox;
         private System.Windows.Forms.ComboBox iD_VUELOComboBox;
@@ -556,22 +563,22 @@
         private System.Windows.Forms.TextBox iVATextBox;
         private System.Windows.Forms.TextBox tOTALTextBox;
         private System.Windows.Forms.BindingSource tAB_PLAZASBindingSource;
-        private bddvuelosDataSetTableAdapters.TAB_PLAZASTableAdapter tAB_PLAZASTableAdapter;
-        private System.Windows.Forms.BindingSource tAB_CLIENTESBindingSource;
-        private bddvuelosDataSetTableAdapters.TAB_CLIENTESTableAdapter tAB_CLIENTESTableAdapter;
-        private System.Windows.Forms.BindingSource tAB_VUELOSBindingSource;
-        private bddvuelosDataSetTableAdapters.TAB_VUELOSTableAdapter tAB_VUELOSTableAdapter;
-        private bddvuelosDataSet1 bddvuelosDataSet1;
-        private System.Windows.Forms.BindingSource tABTARJETASEMBARQUEBindingSource;
-        private bddvuelosDataSet1TableAdapters.TAB_TARJETAS_EMBARQUETableAdapter tAB_TARJETAS_EMBARQUETableAdapter;
         private System.Windows.Forms.DataGridView tAB_PLAZASDataGridView;
+        private bddvuelosDataSet2 bddvuelosDataSet2;
+        private System.Windows.Forms.BindingSource tABTARJETASEMBARQUEBindingSource;
+        private bddvuelosDataSet2TableAdapters.TAB_TARJETAS_EMBARQUETableAdapter tAB_TARJETAS_EMBARQUETableAdapter;
+        private bddvuelosDataSetTableAdapters.TAB_CLIENTESTableAdapter tAB_CLIENTESTableAdapter;
+        private System.Windows.Forms.BindingSource tAB_CLIENTESBindingSource;
+        private bddvuelosDataSetTableAdapters.TAB_VUELOSTableAdapter tAB_VUELOSTableAdapter;
+        private System.Windows.Forms.BindingSource tAB_VUELOSBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+
     }
 }
