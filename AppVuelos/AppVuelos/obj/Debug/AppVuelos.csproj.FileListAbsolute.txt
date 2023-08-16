@@ -55,3 +55,8 @@ C:\Users\experto\Desktop\AppVuelosVer2\AppVuelos\AppVuelos\obj\Debug\AppVuelos.P
 C:\Users\experto\Desktop\AppVuelosVer2\AppVuelos\AppVuelos\obj\Debug\AppVuelos.csproj.GenerateResource.Cache
 C:\Users\experto\Desktop\AppVuelosVer2\AppVuelos\AppVuelos\obj\Debug\AppVuelos.FrmReservacionesVer2.resources
 C:\Users\experto\Desktop\AppVuelosVer2\AppVuelos\AppVuelos\obj\Debug\AppVuelos.FrmPaises.resources
+C:\Users\experto\Desktop\AppVuelosVer2\AppVuelos\AppVuelos\obj\Debug\AppVuelos.FrmRepPaises.resources
+C:\Users\experto\Desktop\AppVuelosVer2\AppVuelos\AppVuelos\obj\Debug\RdlCompile.cache
+C:\Users\experto\Desktop\AppVuelosVer2\AppVuelos\AppVuelos\obj\Debug\RdlCompile.compiled
+C:\Users\experto\Desktop\AppVuelosVer2\AppVuelos\AppVuelos\obj\Debug\AppVuelos.FrmRepBasicos.resources
+C:\Users\experto\Desktop\AppVuelosVer2\AppVuelos\AppVuelos\obj\Debug\AppVuelos.FrmRepClientes.resources

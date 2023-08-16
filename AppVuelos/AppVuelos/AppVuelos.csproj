@@ -32,8 +32,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -99,6 +102,24 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRepBasicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRepBasicos.Designer.cs">
+      <DependentUpon>FrmRepBasicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRepClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRepClientes.Designer.cs">
+      <DependentUpon>FrmRepClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRepPaises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRepPaises.Designer.cs">
+      <DependentUpon>FrmRepPaises.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmReservaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +152,15 @@
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmRepBasicos.resx">
+      <DependentUpon>FrmRepBasicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRepClientes.resx">
+      <DependentUpon>FrmRepClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRepPaises.resx">
+      <DependentUpon>FrmRepPaises.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmReservaciones.resx">
       <DependentUpon>frmReservaciones.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +176,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RepClientes.rdlc" />
+    <EmbeddedResource Include="RepPaises.rdlc" />
     <None Include="bddvuelosDataSet.xsc">
       <DependentUpon>bddvuelosDataSet.xsd</DependentUpon>
     </None>

@@ -49,5 +49,25 @@ namespace AppVuelos
             this.tAB_RESERVACIONESTableAdapter.Fill(this.bddvuelosDataSet.TAB_RESERVACIONES);
 
         }
+
+        private void tAB_PLAZASDataGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        public void calcularTotales(){
+            Decimal subtotal = 0;
+            for (int i=0;i>tAB_PLAZASDataGridView.Rows.Count -1; i++)
+                {
+                    Decimal precio = Decimal.Parse(tAB_PLAZASDataGridView[6,i].Value.ToString());
+                    subtotal += precio;
+            }
+            sUBTOTALTextBox.Text = subtotal.ToString();
+            Decimal iva=Decimal.Multiply(subtotal,new Decimal(0.12));
+            Decimal total=Decimal.Multiply(subtotal,new Decimal(1.12));
+            iva = Math.Round(iva, 2);
+            total = Math.Round(total, 2);
+            iVATextBox.Text = iva.ToString();
+            tOTALTextBox.Text = total.ToString();
+        }
     }
 }

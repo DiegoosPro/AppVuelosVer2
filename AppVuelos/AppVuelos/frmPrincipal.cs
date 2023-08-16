@@ -124,5 +124,16 @@ namespace AppVuelos
         {
             cargarFormulario(new frmAeropuerto());
         }
+
+        private void basicosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cargarFormulario(new FrmRepBasicos());
+        }
+
+        private void clientesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            cargarFormulario(new FrmRepClientes());
+
+        }
     }
 }
