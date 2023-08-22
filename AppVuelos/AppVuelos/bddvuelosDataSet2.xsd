@@ -700,6 +700,51 @@ SELECT ID_VUELO, ID_AEROPUERTO_LLEGADA, ID_AEROPUERTO_SALIDA, CODIGO_VUELO, FECH
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AeropuertoPaisTableAdapter" GeneratorDataComponentClassName="AeropuertoPaisTableAdapter" Name="AeropuertoPais" UserDataComponentName="AeropuertoPaisTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bddvuelosConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillAeropuertoPais" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetDataAeropuertoPais" GeneratorSourceName="FillAeropuertoPais" GetMethodModifier="Public" GetMethodName="GetDataAeropuertoPais" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataAeropuertoPais" UserSourceName="FillAeropuertoPais">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        TAB_AEROPUERTOS.CODIGO_AEROPUERTO, TAB_AEROPUERTOS.NOMBRE_AEROPUERTO, TAB_CIUDADES.CIUDAD, TAB_PAISES.PAIS
+FROM            TAB_AEROPUERTOS INNER JOIN
+                         TAB_CIUDADES ON TAB_AEROPUERTOS.ID_CIUDAD = TAB_CIUDADES.ID_CIUDAD INNER JOIN
+                         TAB_PAISES ON TAB_CIUDADES.ID_PAIS = TAB_PAISES.ID_PAIS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CODIGO_AEROPUERTO" DataSetColumn="CODIGO_AEROPUERTO" />
+              <Mapping SourceColumn="NOMBRE_AEROPUERTO" DataSetColumn="NOMBRE_AEROPUERTO" />
+              <Mapping SourceColumn="CIUDAD" DataSetColumn="CIUDAD" />
+              <Mapping SourceColumn="PAIS" DataSetColumn="PAIS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ClientesVuelosTableAdapter" GeneratorDataComponentClassName="ClientesVuelosTableAdapter" Name="ClientesVuelos" UserDataComponentName="ClientesVuelosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bddvuelosConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillClientesVuelosrep" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetDataClientesVuelosrep" GeneratorSourceName="FillClientesVuelosrep" GetMethodModifier="Public" GetMethodName="GetDataClientesVuelosrep" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataClientesVuelosrep" UserSourceName="FillClientesVuelosrep">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        TAB_CLIENTES.NOMBRES, TAB_CLIENTES.APELLIDOS, TAB_VUELOS.CODIGO_VUELO, TAB_VUELOS.FECHA_SALIDA, TAB_VUELOS.FECHA_LLEGADA
+FROM            TAB_VUELOS INNER JOIN
+                         TAB_TARJETAS_EMBARQUE ON TAB_VUELOS.ID_VUELO = TAB_TARJETAS_EMBARQUE.ID_VUELO INNER JOIN
+                         TAB_CLIENTES ON TAB_TARJETAS_EMBARQUE.ID_CLIENTE = TAB_CLIENTES.ID_CLIENTE</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NOMBRES" DataSetColumn="NOMBRES" />
+              <Mapping SourceColumn="APELLIDOS" DataSetColumn="APELLIDOS" />
+              <Mapping SourceColumn="CODIGO_VUELO" DataSetColumn="CODIGO_VUELO" />
+              <Mapping SourceColumn="FECHA_SALIDA" DataSetColumn="FECHA_SALIDA" />
+              <Mapping SourceColumn="FECHA_LLEGADA" DataSetColumn="FECHA_LLEGADA" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -916,6 +961,69 @@ SELECT ID_VUELO, ID_AEROPUERTO_LLEGADA, ID_AEROPUERTO_SALIDA, CODIGO_VUELO, FECH
               <xs:element name="FECHA_SALIDA" msprop:Generator_ColumnVarNameInTable="columnFECHA_SALIDA" msprop:Generator_ColumnPropNameInRow="FECHA_SALIDA" msprop:Generator_ColumnPropNameInTable="FECHA_SALIDAColumn" msprop:Generator_UserColumnName="FECHA_SALIDA" type="xs:dateTime" minOccurs="0" />
               <xs:element name="FECHA_LLEGADA" msprop:Generator_ColumnVarNameInTable="columnFECHA_LLEGADA" msprop:Generator_ColumnPropNameInRow="FECHA_LLEGADA" msprop:Generator_ColumnPropNameInTable="FECHA_LLEGADAColumn" msprop:Generator_UserColumnName="FECHA_LLEGADA" type="xs:dateTime" minOccurs="0" />
               <xs:element name="PRECIO" msprop:Generator_ColumnVarNameInTable="columnPRECIO" msprop:Generator_ColumnPropNameInRow="PRECIO" msprop:Generator_ColumnPropNameInTable="PRECIOColumn" msprop:Generator_UserColumnName="PRECIO" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AeropuertoPais" msprop:Generator_TableClassName="AeropuertoPaisDataTable" msprop:Generator_TableVarName="tableAeropuertoPais" msprop:Generator_RowChangedName="AeropuertoPaisRowChanged" msprop:Generator_TablePropName="AeropuertoPais" msprop:Generator_RowDeletingName="AeropuertoPaisRowDeleting" msprop:Generator_RowChangingName="AeropuertoPaisRowChanging" msprop:Generator_RowEvHandlerName="AeropuertoPaisRowChangeEventHandler" msprop:Generator_RowDeletedName="AeropuertoPaisRowDeleted" msprop:Generator_RowClassName="AeropuertoPaisRow" msprop:Generator_UserTableName="AeropuertoPais" msprop:Generator_RowEvArgName="AeropuertoPaisRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODIGO_AEROPUERTO" msprop:Generator_ColumnVarNameInTable="columnCODIGO_AEROPUERTO" msprop:Generator_ColumnPropNameInRow="CODIGO_AEROPUERTO" msprop:Generator_ColumnPropNameInTable="CODIGO_AEROPUERTOColumn" msprop:Generator_UserColumnName="CODIGO_AEROPUERTO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOMBRE_AEROPUERTO" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_AEROPUERTO" msprop:Generator_ColumnPropNameInRow="NOMBRE_AEROPUERTO" msprop:Generator_ColumnPropNameInTable="NOMBRE_AEROPUERTOColumn" msprop:Generator_UserColumnName="NOMBRE_AEROPUERTO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CIUDAD" msprop:Generator_ColumnVarNameInTable="columnCIUDAD" msprop:Generator_ColumnPropNameInRow="CIUDAD" msprop:Generator_ColumnPropNameInTable="CIUDADColumn" msprop:Generator_UserColumnName="CIUDAD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PAIS" msprop:Generator_ColumnVarNameInTable="columnPAIS" msprop:Generator_ColumnPropNameInRow="PAIS" msprop:Generator_ColumnPropNameInTable="PAISColumn" msprop:Generator_UserColumnName="PAIS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ClientesVuelos" msprop:Generator_TableClassName="ClientesVuelosDataTable" msprop:Generator_TableVarName="tableClientesVuelos" msprop:Generator_RowChangedName="ClientesVuelosRowChanged" msprop:Generator_TablePropName="ClientesVuelos" msprop:Generator_RowDeletingName="ClientesVuelosRowDeleting" msprop:Generator_RowChangingName="ClientesVuelosRowChanging" msprop:Generator_RowEvHandlerName="ClientesVuelosRowChangeEventHandler" msprop:Generator_RowDeletedName="ClientesVuelosRowDeleted" msprop:Generator_RowClassName="ClientesVuelosRow" msprop:Generator_UserTableName="ClientesVuelos" msprop:Generator_RowEvArgName="ClientesVuelosRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NOMBRES" msprop:Generator_ColumnVarNameInTable="columnNOMBRES" msprop:Generator_ColumnPropNameInRow="NOMBRES" msprop:Generator_ColumnPropNameInTable="NOMBRESColumn" msprop:Generator_UserColumnName="NOMBRES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APELLIDOS" msprop:Generator_ColumnVarNameInTable="columnAPELLIDOS" msprop:Generator_ColumnPropNameInRow="APELLIDOS" msprop:Generator_ColumnPropNameInTable="APELLIDOSColumn" msprop:Generator_UserColumnName="APELLIDOS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CODIGO_VUELO" msprop:Generator_ColumnVarNameInTable="columnCODIGO_VUELO" msprop:Generator_ColumnPropNameInRow="CODIGO_VUELO" msprop:Generator_ColumnPropNameInTable="CODIGO_VUELOColumn" msprop:Generator_UserColumnName="CODIGO_VUELO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FECHA_SALIDA" msprop:Generator_ColumnVarNameInTable="columnFECHA_SALIDA" msprop:Generator_ColumnPropNameInRow="FECHA_SALIDA" msprop:Generator_ColumnPropNameInTable="FECHA_SALIDAColumn" msprop:Generator_UserColumnName="FECHA_SALIDA" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FECHA_LLEGADA" msprop:Generator_ColumnVarNameInTable="columnFECHA_LLEGADA" msprop:Generator_ColumnPropNameInRow="FECHA_LLEGADA" msprop:Generator_ColumnPropNameInTable="FECHA_LLEGADAColumn" msprop:Generator_UserColumnName="FECHA_LLEGADA" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

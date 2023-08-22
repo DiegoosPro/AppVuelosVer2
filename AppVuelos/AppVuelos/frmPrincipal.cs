@@ -135,5 +135,10 @@ namespace AppVuelos
             cargarFormulario(new FrmRepClientes());
 
         }
+
+        private void personalizadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cargarFormulario(new FrmRepPersonalizados());
+        }
     }
 }

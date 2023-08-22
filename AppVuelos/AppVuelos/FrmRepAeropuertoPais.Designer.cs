@@ -1,6 +1,6 @@
 ﻿namespace AppVuelos
 {
-    partial class FrmRepPaises
+    partial class FrmRepAeropuertoPais
     {
         /// <summary>
         /// Required designer variable.
@@ -30,50 +30,50 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.TAB_PAISESBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bddvuelosDataSet2 = new AppVuelos.bddvuelosDataSet2();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.TAB_PAISESTableAdapter = new AppVuelos.bddvuelosDataSet2TableAdapters.TAB_PAISESTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.TAB_PAISESBindingSource)).BeginInit();
+            this.bddvuelosDataSet2 = new AppVuelos.bddvuelosDataSet2();
+            this.AeropuertoPaisBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.AeropuertoPaisTableAdapter = new AppVuelos.bddvuelosDataSet2TableAdapters.AeropuertoPaisTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.bddvuelosDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AeropuertoPaisBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // TAB_PAISESBindingSource
+            // reportViewer1
             // 
-            this.TAB_PAISESBindingSource.DataMember = "TAB_PAISES";
-            this.TAB_PAISESBindingSource.DataSource = this.bddvuelosDataSet2;
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.AeropuertoPaisBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "AppVuelos.RepAeropuertoPais.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(35, 26);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(617, 361);
+            this.reportViewer1.TabIndex = 0;
             // 
             // bddvuelosDataSet2
             // 
             this.bddvuelosDataSet2.DataSetName = "bddvuelosDataSet2";
             this.bddvuelosDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // reportViewer1
+            // AeropuertoPaisBindingSource
             // 
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.TAB_PAISESBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "AppVuelos.RepPaises.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(12, 12);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(699, 401);
-            this.reportViewer1.TabIndex = 0;
+            this.AeropuertoPaisBindingSource.DataMember = "AeropuertoPais";
+            this.AeropuertoPaisBindingSource.DataSource = this.bddvuelosDataSet2;
             // 
-            // TAB_PAISESTableAdapter
+            // AeropuertoPaisTableAdapter
             // 
-            this.TAB_PAISESTableAdapter.ClearBeforeFill = true;
+            this.AeropuertoPaisTableAdapter.ClearBeforeFill = true;
             // 
-            // FrmRepPaises
+            // FrmRepAeropuertoPais
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 456);
+            this.ClientSize = new System.Drawing.Size(719, 439);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "FrmRepPaises";
-            this.Text = "FrmRepPaises";
-            this.Load += new System.EventHandler(this.FrmRepPaises_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.TAB_PAISESBindingSource)).EndInit();
+            this.Name = "FrmRepAeropuertoPais";
+            this.Text = "FrmRepAeropuertoPais";
+            this.Load += new System.EventHandler(this.FrmRepAeropuertoPais_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bddvuelosDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AeropuertoPaisBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -81,8 +81,8 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.BindingSource TAB_PAISESBindingSource;
+        private System.Windows.Forms.BindingSource AeropuertoPaisBindingSource;
         private bddvuelosDataSet2 bddvuelosDataSet2;
-        private bddvuelosDataSet2TableAdapters.TAB_PAISESTableAdapter TAB_PAISESTableAdapter;
+        private bddvuelosDataSet2TableAdapters.AeropuertoPaisTableAdapter AeropuertoPaisTableAdapter;
     }
 }

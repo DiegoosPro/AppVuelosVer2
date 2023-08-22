@@ -47,21 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bddvuelosDataSet.cs">
-      <DependentUpon>bddvuelosDataSet.xsd</DependentUpon>
+    <Compile Include="bddvuelosDataSet2.cs">
+      <DependentUpon>bddvuelosDataSet2.xsd</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="bddvuelosDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>bddvuelosDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="bddvuelosDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>bddvuelosDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="bddvuelosDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bddvuelosDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bddvuelosDataSet21.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>bddvuelosDataSet2.xsd</DependentUpon>
@@ -95,6 +90,24 @@
     </Compile>
     <Compile Include="FrmPaises.Designer.cs">
       <DependentUpon>FrmPaises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRepAeropuertoPais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRepAeropuertoPais.Designer.cs">
+      <DependentUpon>FrmRepAeropuertoPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRepClientesVuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRepClientesVuelos.Designer.cs">
+      <DependentUpon>FrmRepClientesVuelos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRepPersonalizados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRepPersonalizados.Designer.cs">
+      <DependentUpon>FrmRepPersonalizados.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -149,6 +162,15 @@
     <EmbeddedResource Include="FrmPaises.resx">
       <DependentUpon>FrmPaises.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmRepAeropuertoPais.resx">
+      <DependentUpon>FrmRepAeropuertoPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRepClientesVuelos.resx">
+      <DependentUpon>FrmRepClientesVuelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRepPersonalizados.resx">
+      <DependentUpon>FrmRepPersonalizados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,37 +198,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RepAeropuertoPais.rdlc" />
     <EmbeddedResource Include="RepClientes.rdlc" />
+    <EmbeddedResource Include="RepClientesVuelos.rdlc" />
     <EmbeddedResource Include="RepPaises.rdlc" />
-    <None Include="bddvuelosDataSet.xsc">
-      <DependentUpon>bddvuelosDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="bddvuelosDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>bddvuelosDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="bddvuelosDataSet.xss">
-      <DependentUpon>bddvuelosDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="bddvuelosDataSet1.xsc">
-      <DependentUpon>bddvuelosDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="bddvuelosDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>bddvuelosDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="bddvuelosDataSet1.xss">
-      <DependentUpon>bddvuelosDataSet1.xsd</DependentUpon>
-    </None>
     <None Include="bddvuelosDataSet2.xsc">
       <DependentUpon>bddvuelosDataSet2.xsd</DependentUpon>
     </None>
     <None Include="bddvuelosDataSet2.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>bddvuelosDataSet2.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>bddvuelosDataSet21.Designer.cs</LastGenOutput>
     </None>
     <None Include="bddvuelosDataSet2.xss">
       <DependentUpon>bddvuelosDataSet2.xsd</DependentUpon>

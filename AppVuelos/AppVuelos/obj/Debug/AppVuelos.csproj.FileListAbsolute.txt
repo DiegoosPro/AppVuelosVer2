@@ -60,3 +60,6 @@ C:\Users\experto\Desktop\AppVuelosVer2\AppVuelos\AppVuelos\obj\Debug\RdlCompile.
 C:\Users\experto\Desktop\AppVuelosVer2\AppVuelos\AppVuelos\obj\Debug\RdlCompile.compiled
 C:\Users\experto\Desktop\AppVuelosVer2\AppVuelos\AppVuelos\obj\Debug\AppVuelos.FrmRepBasicos.resources
 C:\Users\experto\Desktop\AppVuelosVer2\AppVuelos\AppVuelos\obj\Debug\AppVuelos.FrmRepClientes.resources
+C:\Users\experto\Desktop\AppVuelosVer2\AppVuelos\AppVuelos\obj\Debug\AppVuelos.FrmRepAeropuertoPais.resources
+C:\Users\experto\Desktop\AppVuelosVer2\AppVuelos\AppVuelos\obj\Debug\AppVuelos.FrmRepPersonalizados.resources
+C:\Users\experto\Desktop\AppVuelosVer2\AppVuelos\AppVuelos\obj\Debug\AppVuelos.FrmRepClientesVuelos.resources

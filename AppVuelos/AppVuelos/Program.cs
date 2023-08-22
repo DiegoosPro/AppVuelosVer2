@@ -16,7 +16,7 @@ namespace AppVuelos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmRepClientes());
+            Application.Run(new FrmRepClientesVuelos());
         }
     }
 }

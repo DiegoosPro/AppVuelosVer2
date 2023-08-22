@@ -56,6 +56,8 @@
             this.aeropuertoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vuelosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.basicosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -68,8 +70,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.basicosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.personalizadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -283,10 +284,25 @@
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.basicosToolStripMenuItem,
-            this.clientesToolStripMenuItem1});
+            this.clientesToolStripMenuItem1,
+            this.personalizadosToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.reportesToolStripMenuItem.Text = "Reportes";
+            // 
+            // basicosToolStripMenuItem
+            // 
+            this.basicosToolStripMenuItem.Name = "basicosToolStripMenuItem";
+            this.basicosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.basicosToolStripMenuItem.Text = "Basicos";
+            this.basicosToolStripMenuItem.Click += new System.EventHandler(this.basicosToolStripMenuItem_Click);
+            // 
+            // clientesToolStripMenuItem1
+            // 
+            this.clientesToolStripMenuItem1.Name = "clientesToolStripMenuItem1";
+            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.clientesToolStripMenuItem1.Text = "Clientes";
+            this.clientesToolStripMenuItem1.Click += new System.EventHandler(this.clientesToolStripMenuItem1_Click);
             // 
             // toolStrip
             // 
@@ -387,19 +403,12 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
-            // basicosToolStripMenuItem
+            // personalizadosToolStripMenuItem
             // 
-            this.basicosToolStripMenuItem.Name = "basicosToolStripMenuItem";
-            this.basicosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.basicosToolStripMenuItem.Text = "Basicos";
-            this.basicosToolStripMenuItem.Click += new System.EventHandler(this.basicosToolStripMenuItem_Click);
-            // 
-            // clientesToolStripMenuItem1
-            // 
-            this.clientesToolStripMenuItem1.Name = "clientesToolStripMenuItem1";
-            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.clientesToolStripMenuItem1.Text = "Clientes";
-            this.clientesToolStripMenuItem1.Click += new System.EventHandler(this.clientesToolStripMenuItem1_Click);
+            this.personalizadosToolStripMenuItem.Name = "personalizadosToolStripMenuItem";
+            this.personalizadosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.personalizadosToolStripMenuItem.Text = "Personalizados";
+            this.personalizadosToolStripMenuItem.Click += new System.EventHandler(this.personalizadosToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -466,6 +475,7 @@
         private System.Windows.Forms.ToolStripMenuItem aeropuertoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem basicosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem personalizadosToolStripMenuItem;
     }
 }
 
